@@ -7,17 +7,21 @@
 		<meta charset="utf-8">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="style.css" />
+
+
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="main.js"></script>
 	</head>
 
 	<body>
 		<nav id="header" class="navbar navbar-default" role="navigation">
 			<h3 id="naslov">Osnove informacijskih sistemov <small>naloga 4</small></h3>
 			<div class="btn-group">
-				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+				<button id="pacienti" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
 					Pacient
 					<span class="caret"></span>
 				</button>
@@ -29,17 +33,17 @@
 					-->
 				</ul>
 			</div>
-			<button type="button" class="btn btn-default">Generiraj testne podatke</button>
+			<button id="test-gen" type="button" class="btn btn-default" onclick="generirajTestnePodatke();">Generiraj testne podatke</button>
 		</nav>
 
 		<div class="container-fluid">
 			<div class="row">
 
-				<div class="col-md-2">
+				<div id="data" class="col-md-3">
 					<p>temp</p>
 				</div>
 
-				<div class="col-md-10">
+				<div id="data-visual" class="col-md-9">
 					<p>temp</p>
 				</div>
 

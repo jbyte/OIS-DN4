@@ -5,3 +5,13 @@
 #naslov {
 	text-align: center;
 }
+
+.dropdown-btn {
+	width: 100%;
+	background-color: #fff;
+	border-radius: 0px;
+}
+
+.dropdown-btn:hover {
+	background-color: #ccc;
+}
